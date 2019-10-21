@@ -1,25 +1,26 @@
 body {
     font-family: 'Verdana', sans-serif;
     margin: 50px 25px;
+    color: #000000;
 }
 
 a {
-    color: #2a99b6;
+    color: #000000;
 }
 
 a:hover {
-    color: #33bbdf;
+    color: #FF7E6D;
 }
 
 header, footer, div.page {
     width: 760px;
     margin: 0 auto;
-    background: #daeef3;
+    background: #D2FB93;
     padding: 20px 30px;
 }
 
 header h1 {
-    color: #169bbd;
+    color: #000000;
     margin: 0;
     font-weight: normal;
     font-size: 42px;
@@ -37,6 +38,7 @@ header nav ul li {
     padding: 0;
 }
 
+
 div.page {
-    background: #f1fbfe;
+    background: #E7FDC5;
 }
