@@ -30,15 +30,29 @@
     
       Jeroen
     
-    on 2019-10-21
+    on 2019-10-23
   </p>
-  <p>As I have been using SPYDER as one of my main IDE for programming in Python, I wanted to install the beta version however I have challenged myself to download and install this though PIP. Instead of conda.
-Official [documentation] on installing development builds.</p>
-<h2>Prerequisite</h2>
+  <p>As I have been using SPYDER as one of my main IDE for programming in Python, I wanted to install the beta version however I have challenged myself to download and install this though PIP instead of conda.
+Official <a href="https://github.com/spyder-ide/spyder/blob/master/CONTRIBUTING.md">documentation</a> on installing development builds.</p>
+<h1>Prerequisite</h1>
 <ul>
 <li><a href="../../blog/python-on-a-mac">Python installation</a></li>
 <li><a href="../../blog/virtual-enviroment">VirtualEnv package</a></li>
+<li>GIT</li>
 </ul>
+<h1>Launch from console</h1>
+<p>To launch Spyder you have to <code>cd</code> to you SPYDER installation and <code>python bootstrap.py</code> It would be better to launch a application u use often directly from terminal. 
+This can be done by defining a function in your terminal preference file. In my case my shell is zsh as it is default since macOS Catalina. 
+<code>open ~/.zshrc</code> and define your own function within this preference file.</p>
+<p>In my case I have defined a function <em>spyder</em> as follows</p>
+<pre><code>spyder() {
+
+    cd /Users/jeroendevries/Programming/env_spyder/spyder
+
+    git pull https://github.com/spyder-ide/spyder.git
+
+    python3 bootstrap.py
+</code></pre>
 
   </div>
 
